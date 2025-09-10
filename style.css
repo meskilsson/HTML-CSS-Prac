@@ -1,7 +1,13 @@
-
 body {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -18,7 +24,7 @@ body {
 }
 
 .main {
-  display: flex;
+  flex: 1;
   gap: 20px;
   border: 3px solid purple;
   background-color: #e5ccff;
@@ -42,6 +48,7 @@ body {
 
 .aside {
   flex: 1;
+  flex-direction: column-reverse;
   border: 3px solid pink;
   background-color: #ffd6eb;
   padding: 20px;
